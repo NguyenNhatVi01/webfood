@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/order.css">
+    <title>Order</title>
+</head>
+<body>
+    <div class="order_main">
+
+        <div class="order_image">
+            <img src="image/order.webp">
+        </div>
+        <form action="#">
+            <div class="input">
+                <p>Name</p>
+                <input type="text" placeholder="you name">
+            </div>
+            <div class="input">
+                <p>Email</p>
+                <input type="email" placeholder="you email">
+            </div>
+            <div class="input">
+                <p>Number</p>
+                <input placeholder="you number">
+            </div>
+            <div class="input">
+                <p>How Much</p>
+                <input type="number" placeholder="how many order">
+            </div>
+            <div class="input">
+                <p>You Order</p>
+                <input placeholder="food name">
+            </div>
+            <div class="input">
+                <p>Address</p>
+                <input placeholder="you Address">
+            </div>
+            <a href="./index.html" onclick="alertText()" class="order_btn">Order Now</a>
+        </form>
+    </div>
+
+    <script>
+        function alertText() {
+            alert("You have placed your order successfully")
+        }
+    </script>
+</body>
+</html>
