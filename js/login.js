@@ -19,8 +19,15 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
     } else {
         // Dummy authentication check
         if (username === 'tamnn_09' && password === 'P@s12345') {
+            console.log("hello");
+            
             // Display a success message for successful login
             document.getElementById('loginMessage').innerHTML = '<p style="color: green;">Login successful!</p>';
+
+
+            localStorage.setItem('username', username);
+            localStorage.setItem('password', password);
+            localStorage.setItem('isLoggedIn', 'true');
 
             // Redirect to 'index.html' after successful login
             window.location.href = 'index.html';

@@ -15,6 +15,14 @@ btn.forEach(function (button, index) {
 //----------Add Cart-------------//
 
 function addCart(productPrice,productImg,productName){
+
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    if(!isLoggedIn){
+        alert("Vui lòng đăng nhập để thêm vào giỏ hàng");
+        window.location.href = 'login.html';
+        return;
+    }
+
     var addtr = document.createElement("tr")
     var cartItem = document.querySelectorAll("tbody tr")
     for (var i = 0; i < cartItem.length; i++){

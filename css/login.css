@@ -103,6 +103,17 @@ span {
     padding: 12px;
     background-color: #fff;
     text-decoration: none;
-    border-radius: 20px;
     text-align: center;
   }
+
+  
+.button_login{
+  height: 40px;
+  width: 100%;
+  background: #fac031;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}

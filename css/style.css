@@ -7,6 +7,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 section{
@@ -166,8 +167,16 @@ section .main_btn:hover i{
     width: 800px;
     position: relative;
     top: 60px;
+    padding: 20px;
 }
 
+.about_text{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding : 20px;
+}
 .about .about_main .about_text h1 span{
     color: #fac031;
     margin-right: 15px;
@@ -197,9 +206,13 @@ section .main_btn:hover i{
     padding: 12px 25px;
     text-decoration: none;
     color: #fff;
-    position: relative;
-    left: 55%;
-    bottom: 30px;
+    margin-top: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    /* left: 55%; */
+    /* bottom: 30px; */
 }
 
 
@@ -357,4 +370,33 @@ footer .end span{
 ::-webkit-scrollbar-thumb{
     background: #fac031;
     border-radius: 15px;
+}
+.silder-main{
+    position: relative;
+}
+.text-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.nav-main{
+    background: none !important;
+    box-shadow: none !important;
+}
+.nav-main ul li a{
+    color: #fff !important;
+}
+.nav-main ul li a:hover{
+    color: #fac031 !important;
+}
+.nav-main ul li a:hover::after{
+    width: 100% !important;
+} 
+.nav-main .icon i{
+    color: #fff !important;
+}
+.nav-main .icon i:hover{
+    color: #fac031 !important;
 }
