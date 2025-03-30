@@ -18,8 +18,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
         document.getElementById('loginMessage').innerHTML = '<p style="color: red;">Invalid characters in username or password. Please use only letters, numbers, and underscores.</p>';
     } else {
         // Dummy authentication check
-        if (username === 'tamnn_09' && password === 'P@s12345') {
-            console.log("hello");
+        if (username === 'nhatvy_12' && password === 'P@s12345') {
             
             // Display a success message for successful login
             document.getElementById('loginMessage').innerHTML = '<p style="color: green;">Login successful!</p>';
