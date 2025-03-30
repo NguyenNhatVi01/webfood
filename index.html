@@ -96,7 +96,7 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-heart"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
-                <a href="profile.html" id="profile" style="display: none"><i class="fa-solid fa-user"></i></a>
+                <a href="profile.html" id="profile"><i class="fa-solid fa-user"></i></a>
             </div>
 
         </nav>
@@ -242,22 +242,22 @@
             }
         });
 
-        // Check login status and update UI
-        document.addEventListener('DOMContentLoaded', function() {
-            const isLoggedIn = localStorage.getItem('isLoggedIn');
-            const profileButton = document.getElementById('profile');
-            const authButtons = document.querySelector('.auth-buttons');
+        // // Check login status and update UI
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     const isLoggedIn = localStorage.getItem('isLoggedIn');
+        //     const profileButton = document.getElementById('profile');
+        //     const authButtons = document.querySelector('.auth-buttons');
 
-            if (isLoggedIn) {
-                // Show profile, hide login/signup
-                profileButton.style.display = 'inline-block';
-                authButtons.style.display = 'none';
-            } else {
-                // Show login/signup, hide profile
-                profileButton.style.display = 'none';
-                authButtons.style.display = 'block';
-            }
-        });
+        //     if (isLoggedIn) {
+        //         // Show profile, hide login/signup
+        //         profileButton.style.display = 'inline-block';
+        //         authButtons.style.display = 'none';
+        //     } else {
+        //         // Show login/signup, hide profile
+        //         profileButton.style.display = 'none';
+        //         authButtons.style.display = 'block';
+        //     }
+        // });
     </script>
 </body>
 

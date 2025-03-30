@@ -18,7 +18,7 @@ function addCart(productPrice,productImg,productName){
 
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     if(!isLoggedIn){
-        alert("Vui lòng đăng nhập để thêm vào giỏ hàng");
+        alert("Please login !");
         window.location.href = 'login.html';
         return;
     }
